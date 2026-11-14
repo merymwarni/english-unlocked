@@ -1,0 +1,908 @@
+
+/* =========================================
+   1. RESET & GENERAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f7f8fc;
+    color: #252b48;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+
+/* =========================================
+   2. NAVIGATION
+========================================= */
+
+header {
+    background: white;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    position: relative;
+    width: 100%;
+    flex-shrink: 0;
+    z-index: 100;
+}
+
+.navbar {
+    max-width: 1200px;
+    min-height: 75px;
+    margin: auto;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #273c75;
+    white-space: nowrap;
+}
+
+.logo span {
+    color: #7950d8;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #424760;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: #7950d8;
+}
+
+
+/* =========================================
+   3. MAIN & PAGE NAVIGATION
+========================================= */
+
+main {
+    flex: 1;
+    min-height: 0;
+    width: 100%;
+    position: relative;
+}
+
+.page {
+    display: none;
+    width: 100%;
+    min-height: 75vh;
+    padding: 35px 30px;
+    overflow-x: hidden;
+    animation: fadeIn 0.3s ease;
+}
+
+.page.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================
+   4. HOME / HERO
+========================================= */
+
+#home {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    min-height: 75vh;
+
+    background:
+        linear-gradient(
+            120deg,
+            rgba(39, 60, 117, 0.91),
+            rgba(121, 80, 216, 0.72)
+        ),
+        url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+    background-position: center;
+}
+
+#home.active {
+    display: flex;
+}
+
+.hero {
+    width: 100%;
+}
+
+.hero-content {
+    max-width: 750px;
+    margin: auto;
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: clamp(40px, 7vw, 65px);
+    line-height: 1.2;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.hero-content h2 {
+    font-size: clamp(20px, 3vw, 27px);
+    margin-bottom: 18px;
+    color: #e8dfff;
+}
+
+.hero-content p:not(.subtitle) {
+    color: #f4f2ff;
+    font-size: 16px;
+    margin: 0 auto 28px;
+}
+
+
+/* =========================================
+   5. SUBTITLE & BUTTON
+========================================= */
+
+.subtitle {
+    color: #7950d8;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+button {
+    display: inline-block;
+    border: none;
+    text-decoration: none;
+    background: #7950d8;
+    color: white;
+    padding: 11px 23px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 12px;
+}
+
+button:hover {
+    background: #6039b8;
+    transform: translateY(-3px);
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+    outline: 3px solid #b9a5e8;
+    outline-offset: 3px;
+}
+
+
+/* =========================================
+   6. GENERAL SECTION
+========================================= */
+
+.section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px 0 40px;
+    text-align: center;
+}
+
+.section > h2 {
+    font-size: 32px;
+    color: #273c75;
+    margin-bottom: 18px;
+}
+
+.section > p {
+    max-width: 750px;
+    margin: 0 auto 25px;
+    color: #626780;
+}
+
+.section h3 {
+    color: #273c75;
+}
+
+.section h3:not(.developer-profile h3) {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.section ul {
+    padding-left: 25px;
+    margin: 12px 0 20px;
+    text-align: left;
+}
+
+.section li {
+    color: #626780;
+    margin-bottom: 7px;
+}
+
+
+/* =========================================
+   7. INFORMATION CARDS
+========================================= */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.info-card {
+    padding: 25px;
+    background: white;
+    border-radius: 15px;
+    border: 1px solid #eeeaf7;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+    text-align: left;
+    min-width: 0;
+    transition: 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(121, 80, 216, 0.10);
+}
+
+.info-card h3 {
+    color: #7950d8;
+    margin-bottom: 10px;
+}
+
+.info-card h4 {
+    color: #60449f;
+    margin-bottom: 8px;
+}
+
+.info-card p {
+    color: #626780;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.info-card button {
+    margin-top: 15px;
+}
+
+
+/* =========================================
+   8. MATERIAL DETAILS
+========================================= */
+
+.material-detail {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.material-detail > .subtitle,
+.material-detail > h2 {
+    text-align: center;
+}
+
+.material-detail > h2 {
+    color: #273c75;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.material-detail h3 {
+    color: #273c75;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+.material-detail p {
+    color: #626780;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.material-detail .info-card {
+    margin: 15px 0;
+}
+
+.material-detail ul {
+    padding-left: 25px;
+    margin: 10px 0 20px;
+}
+
+.material-detail li {
+    color: #626780;
+    margin-bottom: 8px;
+}
+
+.material-detail > button {
+    margin-top: 25px;
+}
+
+
+/* =========================================
+   9. QUIZ & GAMES
+========================================= */
+
+#games .card-container {
+    align-items: stretch;
+}
+
+#games .info-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#games .info-card .video-container {
+    width: 100%;
+}
+
+#games .info-card button,
+#games .info-card a {
+    margin-top: auto;
+}
+
+#games .info-card a {
+    text-decoration: none;
+}
+
+#games > .section > button {
+    margin-top: 30px;
+}
+
+
+/* =========================================
+   10. YOUTUBE VIDEO
+========================================= */
+
+.video-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin: 20px 0;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #252b48;
+}
+
+.video-container iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+/* =========================================
+   11. READING PRACTICE
+========================================= */
+
+#readingPractice .section {
+    max-width: 900px;
+    text-align: left;
+}
+
+#readingPractice .section > .subtitle,
+#readingPractice .section > h2,
+#readingPractice .section > h3 {
+    text-align: center;
+}
+
+#readingPractice .section > h2 {
+    font-size: 32px;
+    color: #273c75;
+    margin-bottom: 20px;
+}
+
+.reading-text {
+    background: #f7f5fc;
+    border-left: 4px solid #7950d8;
+    padding: 22px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.reading-text p {
+    color: #626780;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+.reading-text p:last-child {
+    margin-bottom: 0;
+}
+
+#readingForm h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding: 13px 18px;
+    background: #eaf0ff;
+    border-left: 5px solid #7950d8;
+    border-radius: 8px;
+    color: #273c75;
+}
+
+.question {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border: 1px solid #e2e6ef;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.question:focus-within {
+    border-color: #a58add;
+}
+
+.question p {
+    color: #273c75;
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.question label {
+    display: block;
+    color: #626780;
+    font-size: 14px;
+    margin: 10px 0;
+    cursor: pointer;
+    line-height: 1.6;
+}
+
+.question label:hover {
+    color: #7950d8;
+}
+
+.question input {
+    margin-right: 8px;
+    accent-color: #7950d8;
+    cursor: pointer;
+}
+
+.reading-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+.reading-buttons button {
+    margin-top: 0;
+}
+
+#readingResult {
+    margin: 20px 0;
+}
+
+.reading-score {
+    background: #f0f7ff;
+    padding: 25px;
+    margin: 20px 0;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid #dfe8fa;
+}
+
+.reading-score h3 {
+    color: #273c75;
+}
+
+.reading-score h2 {
+    font-size: 38px;
+    color: #7950d8;
+    margin: 8px 0;
+}
+
+.reading-score p {
+    color: #626780;
+    margin-top: 8px;
+}
+
+#readingPractice .section > button:last-child {
+    margin-top: 15px;
+}
+
+
+/* =========================================
+   12. SPEAKING PRACTICE
+========================================= */
+
+#speakingPractice .section {
+    max-width: 900px;
+}
+
+#speakingMaterial,
+#speakingExercise {
+    width: 100%;
+    margin: 25px auto;
+    text-align: left;
+}
+
+#speakingMaterial > h3,
+#speakingExercise > h3 {
+    color: #60449f;
+    margin: 25px 0 15px;
+}
+
+#speakingMaterial .info-card {
+    margin: 15px 0;
+}
+
+#speakingMaterial .video-container {
+    max-width: 750px;
+    margin: 20px auto;
+}
+
+#speakingMaterial > button,
+#speakingExercise > button,
+#speakingPractice .section > button {
+    margin: 10px 5px;
+}
+
+#speakingExercise .info-card {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 30px;
+    text-align: center;
+}
+
+#speakingNumber {
+    color: #7950d8;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#speakingPrompt {
+    color: #273c75;
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+#speakingStatus {
+    color: #626780;
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+#recognizedSpeech {
+    background: #f7f5fc;
+    color: #626780;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px 0;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+    min-height: 45px;
+}
+
+#speakingFeedback {
+    margin: 15px 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#speakingExercise button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+
+/* =========================================
+   13. CONTACT / DEVELOPER PROFILE
+========================================= */
+
+.contact-section {
+    text-align: center;
+    padding-top: 60px;
+}
+
+.contact-section > p {
+    max-width: 600px;
+    margin: 15px auto;
+    color: #626780;
+}
+
+.developer-card {
+    max-width: 850px;
+    margin: 35px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid #eeeaf7;
+    text-align: left;
+}
+
+.developer-profile {
+    text-align: center;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eeeaf7;
+    margin-bottom: 25px;
+}
+
+.developer-profile h3 {
+    color: #273c75;
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+
+.developer-profile p {
+    color: #7950d8;
+    font-size: 14px;
+}
+
+.developer-information {
+    margin: 22px 0;
+}
+
+.developer-information h3 {
+    color: #60449f;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.information-list p {
+    padding: 10px 0;
+    border-bottom: 1px solid #f0edf6;
+    color: #626780;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.information-list p:last-child {
+    border-bottom: none;
+}
+
+.information-list strong {
+    color: #273c75;
+}
+
+.developer-message {
+    color: #7950d8;
+    font-weight: 600;
+    font-style: italic;
+    margin-top: 25px;
+    text-align: center;
+}
+
+
+/* =========================================
+   14. FOOTER
+========================================= */
+
+footer {
+    flex-shrink: 0;
+    background: #273c75;
+    color: white;
+    text-align: center;
+    padding: 20px 15px;
+    font-size: 12px;
+}
+
+footer h3 {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+footer p {
+    color: #f4f2ff;
+    margin-top: 3px;
+}
+
+footer p:last-child {
+    color: #d9c9ff;
+    margin-top: 10px;
+}
+
+
+/* =========================================
+   15. SCROLLBAR
+========================================= */
+
+.page::-webkit-scrollbar {
+    width: 8px;
+}
+
+.page::-webkit-scrollbar-thumb {
+    background: #b9a5e8;
+    border-radius: 10px;
+}
+
+.page::-webkit-scrollbar-track {
+    background: #f1eff8;
+}
+
+
+/* =========================================
+   16. RESPONSIVE TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+        padding: 15px 20px;
+        gap: 12px;
+    }
+
+    .nav-menu {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px 18px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* =========================================
+   17. RESPONSIVE MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .page {
+        padding: 22px 15px;
+    }
+
+    .navbar {
+        padding: 12px 15px;
+    }
+
+    .nav-menu {
+        justify-content: center;
+        gap: 9px 13px;
+    }
+
+    .nav-menu a {
+        font-size: 12px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content h2 {
+        font-size: 20px;
+    }
+
+    .section > h2,
+    #readingPractice .section > h2 {
+        font-size: 27px;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .info-card {
+        padding: 20px;
+    }
+
+    .material-detail > h2 {
+        font-size: 27px;
+    }
+
+    .reading-text {
+        padding: 16px;
+    }
+
+    .question {
+        padding: 15px;
+    }
+
+    .question label {
+        font-size: 13px;
+    }
+
+    .reading-buttons {
+        flex-direction: column;
+    }
+
+    .reading-buttons button {
+        width: 100%;
+    }
+
+    #speakingExercise .info-card {
+        padding: 20px;
+    }
+
+    #speakingPrompt {
+        font-size: 19px;
+    }
+
+    #speakingMaterial > button,
+    #speakingExercise > button,
+    #speakingPractice .section > button {
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    .developer-card {
+        padding: 20px;
+    }
+
+    .developer-information h3 {
+        font-size: 16px;
+    }
+
+    .information-list p {
+        font-size: 13px;
+    }
+
+    footer {
+        padding: 18px 12px;
+    }
+}
