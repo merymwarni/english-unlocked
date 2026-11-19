@@ -1,53 +1,43 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO Title -->
-    <title>English Unlocked - Nur Haliza | Travelling Adventure</title>
+    <title>English Unlocked | Travelling Adventure</title>
 
-    <!-- SEO Description -->
-    <meta name="description" content="English Unlocked is an interactive English learning website developed by Nur Haliza for junior high school students. Explore Discussion Text, Simple Present Tense, Time Expressions, and English language skills through a Travelling Adventure theme.">
+    <meta name="description"
+        content="English Unlocked is an interactive English learning website developed by Nur Haliza for junior high school students. Explore English materials and improve listening, speaking, reading, and writing skills through a Travelling Adventure theme.">
 
-    <!-- Website Author -->
     <meta name="author" content="Nur Haliza">
-
-    <!-- Search Engine Instructions -->
     <meta name="robots" content="index, follow">
 
-    <!-- Canonical URL -->
     <link rel="canonical" href="https://eutra.site/">
 
-    <!-- Open Graph Meta Tags -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="English Unlocked">
-    <meta property="og:title" content="English Unlocked - Nur Haliza">
-    <meta property="og:description" content="An interactive English learning website developed by Nur Haliza with a Travelling Adventure theme.">
+    <meta property="og:title" content="English Unlocked | Travelling Adventure">
+    <meta property="og:description"
+        content="Explore the World, Learn English! An interactive English learning adventure for junior high school students.">
     <meta property="og:url" content="https://eutra.site/">
 
-    <!-- Structured Data: Website Identity -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "English Unlocked",
-        "alternateName": "English Unlocked - Nur Haliza",
+        "alternateName": "English Unlocked: Travelling Adventure",
         "url": "https://eutra.site/",
         "author": {
             "@type": "Person",
             "name": "Nur Haliza"
         },
-        "description": "An interactive English learning website for junior high school students, featuring Discussion Text, Simple Present Tense, Time Expressions, and English language skills through a Travelling Adventure theme."
+        "description": "An interactive English learning website for junior high school students."
     }
     </script>
 
-    <!-- Favicon: aktifkan setelah file favicon.png tersedia -->
-    <!-- <link rel="icon" type="image/png" href="/favicon.png"> -->
-
-    <!-- CSS -->
+    <link rel="icon" type="image/png" href="Winking Explorer with Globe.png">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -56,86 +46,110 @@
     <!-- ================= NAVIGATION ================= -->
 
     <header class="navbar">
-        <div class="logo">
-            English <span>Unlocked</span>
-        </div>
+
+        <a href="#home" class="logo" onclick="showPage('home'); return false;">
+
+            <img src="Winking Explorer with Globe.png" alt="English Unlocked Logo">
+
+            <div class="logo-text">
+                <span>English <strong>Unlocked</strong></span>
+                <small>Travelling Adventure</small>
+            </div>
+
+        </a>
 
         <nav class="nav-menu">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#objectives">Objectives</a>
-            <a href="#materials">Materials</a>
-            <a href="#games">Quiz & Games</a>
-            <a href="#contact">Contact</a>
+            <a href="#home" class="active" onclick="showPage('home'); return false;">Home</a>
+            <a href="#objectives" onclick="showPage('objectives'); return false;">Objectives</a>
+            <a href="#materials" onclick="showPage('materials'); return false;">Materials</a>
+            <a href="#skills" onclick="showPage('skills'); return false;">Skills Practice</a>
+            <a href="#games" onclick="showPage('games'); return false;">Quiz & Games</a>
+            <a href="#finalChallenge" onclick="showPage('finalChallenge'); return false;">Final Challenge</a>
+            <a href="#reflection" onclick="showPage('reflection'); return false;">Reflection</a>
+            <a href="#contact" onclick="showPage('contact'); return false;">My Profile</a>
         </nav>
-    </header>
 
+    </header>
 
     <main>
 
         <!-- ================= HOME ================= -->
 
         <section id="home" class="page active">
+
             <div class="hero">
 
                 <div class="hero-content">
-                    <p class="subtitle">WELCOME TO YOUR ENGLISH JOURNEY</p>
 
-                    <h1>ENGLISH UNLOCKED</h1>
+                    <p class="subtitle">WELCOME TO ENGLISH UNLOCKED</p>
+
+                    <h1>Explore the World, Learn English!</h1>
 
                     <h2>Travelling Adventure</h2>
 
-                    <p>
-                        Explore the World, Learn English!
-                        Improve your English skills through an
-                        exciting travelling adventure.
+                    <p class="hero-description">
+                        Discover exciting places, learn useful English expressions,
+                        and improve your English skills through interactive activities.
                     </p>
 
                     <button onclick="showPage('about')">
                         Start Exploring
                     </button>
+
+                </div>
+
+                <div class="hero-image">
+                    <img src="Global Learning Adventure.png" alt="Travelling Adventure Illustration">
                 </div>
 
             </div>
-        </section>
 
+        </section>
 
         <!-- ================= ABOUT ================= -->
 
         <section id="about" class="page">
-            <div class="section">
+
+            <div class="about-container">
 
                 <p class="subtitle">GET TO KNOW THE WEBSITE</p>
 
                 <h2>About English Unlocked</h2>
 
-                <p>
-                    English Unlocked is an interactive English learning
-                    website designed to help junior high school students
-                    improve their English skills through the theme of
-                    Travelling Adventure.
-                </p>
+                <div class="about-description">
 
-                <p>
-                    This website provides learning materials, examples,
-                    videos, exercises, and interactive activities.
-                    Students can learn English in an interesting,
-                    enjoyable, and independent way.
-                </p>
+                    <p>
+                        English Unlocked is an interactive English learning
+                        website designed to help junior high school students
+                        improve their English skills through the theme of
+                        Travelling Adventure.
+                    </p>
 
-                <div class="card-container">
+                    <p>
+                        This website provides learning materials, examples,
+                        videos, exercises, and interactive activities.
+                        Students can learn English in an interesting,
+                        enjoyable, and independent way.
+                    </p>
 
-                    <div class="info-card">
+                </div>
+
+                <div class="about-info-grid">
+
+                    <div class="about-info-card">
+                        <div class="about-icon">📚</div>
                         <h3>Project</h3>
                         <p>English Unlocked</p>
                     </div>
 
-                    <div class="info-card">
+                    <div class="about-info-card">
+                        <div class="about-icon">🌍</div>
                         <h3>Theme</h3>
                         <p>Travelling Adventure</p>
                     </div>
 
-                    <div class="info-card">
+                    <div class="about-info-card">
+                        <div class="about-icon">🎓</div>
                         <h3>Target Learners</h3>
                         <p>Junior High School (SMP)</p>
                     </div>
@@ -147,12 +161,13 @@
                 </button>
 
             </div>
-        </section>
 
+        </section>
 
         <!-- ================= LEARNING OBJECTIVES ================= -->
 
         <section id="objectives" class="page">
+
             <div class="section">
 
                 <p class="subtitle">YOUR LEARNING GOALS</p>
@@ -206,85 +221,108 @@
                 </button>
 
             </div>
-        </section>
 
+        </section>
 
         <!-- ================= MATERIALS MENU ================= -->
 
         <section id="materials" class="page">
-            <div class="section">
+
+            <div class="section materials-container">
 
                 <p class="subtitle">LEARN SOMETHING NEW</p>
 
                 <h2>Learning Materials</h2>
 
                 <p>
-                    Choose a learning material below and start
-                    exploring English!
+                    Choose a learning material below and start exploring English!
                 </p>
 
-                <div class="card-container">
+                <div class="materials-grid">
 
-                    <div class="info-card">
-                        <h3>Discussion Text</h3>
-                        <p>
-                            Learn about discussion texts and
-                            their structures.
-                        </p>
-                        <button onclick="showPage('material1')">
-                            Learn More
-                        </button>
+                    <div class="material-card">
+
+                        <div class="material-image">
+                            <img src="Discussion Text.png" alt="Discussion Text Illustration">
+                        </div>
+
+                        <div class="material-content">
+                            <span class="material-number">MATERIAL 01</span>
+                            <h3>Discussion Text</h3>
+                            <p>Learn about discussion texts and their structures.</p>
+
+                            <button onclick="showPage('material1')">
+                                Learn More
+                            </button>
+                        </div>
+
                     </div>
 
-                    <div class="info-card">
-                        <h3>Simple Present Tense</h3>
-                        <p>
-                            Understand how to describe habits
-                            and general facts.
-                        </p>
-                        <button onclick="showPage('material2')">
-                            Learn More
-                        </button>
+                    <div class="material-card">
+
+                        <div class="material-image">
+                            <img src="Simple Present Tense.png" alt="Simple Present Tense Illustration">
+                        </div>
+
+                        <div class="material-content">
+                            <span class="material-number">MATERIAL 02</span>
+                            <h3>Simple Present Tense</h3>
+                            <p>Understand how to describe habits and general facts.</p>
+
+                            <button onclick="showPage('material2')">
+                                Learn More
+                            </button>
+                        </div>
+
                     </div>
 
-                    <div class="info-card">
-                        <h3>Time Expressions</h3>
-                        <p>
-                            Learn words and phrases related
-                            to time.
-                        </p>
-                        <button onclick="showPage('material3')">
-                            Learn More
-                        </button>
+                    <div class="material-card">
+
+                        <div class="material-image">
+                            <img src="Time Expression.png" alt="Time Expressions Illustration">
+                        </div>
+
+                        <div class="material-content">
+                            <span class="material-number">MATERIAL 03</span>
+                            <h3>Time Expressions</h3>
+                            <p>Learn words and phrases related to time.</p>
+
+                            <button onclick="showPage('material3')">
+                                Learn More
+                            </button>
+                        </div>
+
                     </div>
 
-                    <div class="info-card">
-                        <h3>Common Mistakes</h3>
-                        <p>
-                            Discover and correct common
-                            grammatical errors.
-                        </p>
-                        <button onclick="showPage('material4')">
-                            Learn More
-                        </button>
+                    <div class="material-card">
+
+                        <div class="material-image">
+                            <img src="Common Mistakes.png" alt="Common Mistakes Illustration">
+                        </div>
+
+                        <div class="material-content">
+                            <span class="material-number">MATERIAL 04</span>
+                            <h3>Common Mistakes</h3>
+                            <p>Discover and correct common grammatical errors.</p>
+
+                            <button onclick="showPage('material4')">
+                                Learn More
+                            </button>
+                        </div>
+
                     </div>
 
                 </div>
 
-                <button onclick="showPage('games')">
-                    Go to Quiz & Games
-                </button>
-
             </div>
-        </section>
 
+        </section>
 
         <!-- ================= MATERIAL 1 ================= -->
 
         <section id="material1" class="page">
-            <div class="section material-detail">
 
-                <p class="subtitle">MATERIAL 01</p>
+            <div class="section material-detail">
 
                 <h2>Discussion Text</h2>
 
@@ -307,36 +345,28 @@
 
                 <h3>Generic Structure</h3>
 
-                <div class="info-card">
-                    <h4>1. Issue</h4>
-                    <p>
-                        Introduces the topic or problem
-                        being discussed.
-                    </p>
-                </div>
+                <div class="generic-structure-grid">
 
-                <div class="info-card">
-                    <h4>2. Arguments For</h4>
-                    <p>
-                        Presents supporting opinions
-                        or positive arguments.
-                    </p>
-                </div>
+                    <div class="info-card">
+                        <h4>1. Issue</h4>
+                        <p>Introduces the topic or problem being discussed.</p>
+                    </div>
 
-                <div class="info-card">
-                    <h4>3. Arguments Against</h4>
-                    <p>
-                        Presents opposing opinions
-                        or negative arguments.
-                    </p>
-                </div>
+                    <div class="info-card">
+                        <h4>2. Arguments For</h4>
+                        <p>Presents supporting opinions or positive arguments.</p>
+                    </div>
 
-                <div class="info-card">
-                    <h4>4. Conclusion</h4>
-                    <p>
-                        Provides a final statement
-                        based on the discussion.
-                    </p>
+                    <div class="info-card">
+                        <h4>3. Arguments Against</h4>
+                        <p>Presents opposing opinions or negative arguments.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>4. Conclusion</h4>
+                        <p>Provides a final statement based on the discussion.</p>
+                    </div>
+
                 </div>
 
                 <h3>Language Features</h3>
@@ -350,245 +380,447 @@
 
                 <h3>Example: Travelling by Plane or Train?</h3>
 
-                <p>
-                    <strong>Issue:</strong>
-                    Travelling by plane and train are two popular
-                    ways to visit different places.
-                </p>
+                <div class="discussion-topic">
 
-                <p>
-                    <strong>Arguments For:</strong>
-                    Planes are faster and suitable for long-distance
-                    journeys. Trains offer comfortable seats and
-                    beautiful scenery.
-                </p>
+                    <h4>Discussion Topic</h4>
 
-                <p>
-                    <strong>Arguments Against:</strong>
-                    Plane tickets can be expensive. Trains may take
-                    more time to reach distant destinations.
-                </p>
+                    <p>
+                        Travelling is one of the most enjoyable activities because
+                        it allows people to explore new places, meet different people,
+                        and experience new cultures. When planning a trip, choosing
+                        the right transportation is an important decision. Some
+                        people prefer travelling by plane because it saves time,
+                        especially when visiting places far away. Others prefer
+                        travelling by train because it offers a more relaxing journey
+                        and beautiful views along the way. However, both transportation
+                        options have their own advantages and disadvantages. Travellers
+                        often consider several things, such as ticket prices, travel
+                        time, comfort, and distance, before making a decision. So,
+                        between travelling by plane and train, which one is the
+                        better choice?
+                    </p>
 
-                <p>
-                    <strong>Conclusion:</strong>
-                    Both transportation options have advantages
-                    and disadvantages. Travellers can choose
-                    according to their needs and budget.
-                </p>
+                </div>
+
+                <div class="example-grid">
+
+                    <div class="info-card">
+                        <h4>Issue</h4>
+                        <p>
+                            Travelling by plane and train is a popular way to visit
+                            different places. However, both means of transportation
+                            have different advantages and disadvantages.
+                        </p>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>Arguments For</h4>
+                        <p>
+                            Travelling by plane is faster and suitable for
+                            long-distance journeys. Meanwhile, travelling by train
+                            offers comfortable seats and beautiful scenery along
+                            the way.
+                        </p>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>Arguments Against</h4>
+                        <p>
+                            Plane tickets are often more expensive, especially
+                            during holiday seasons. On the other hand, trains
+                            usually take more time to reach distant destinations.
+                        </p>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>Conclusion</h4>
+                        <p>
+                            Both planes and trains have advantages and disadvantages.
+                            Therefore, travellers should choose the transportation
+                            that best suits their needs, budget, and travel plans.
+                        </p>
+                    </div>
+
+                </div>
 
                 <button onclick="showPage('materials')">
                     Back to Materials
                 </button>
 
             </div>
-        </section>
 
+        </section>
 
         <!-- ================= MATERIAL 2 ================= -->
 
         <section id="material2" class="page">
-            <div class="section material-detail">
 
-                <p class="subtitle">MATERIAL 02</p>
+            <div class="section material-detail">
 
                 <h2>Simple Present Tense</h2>
 
-                <h3>What Is Simple Present Tense?</h3>
+                <div class="tense-intro">
 
-                <p>
-                    Simple Present Tense is used to express
-                    daily activities, habits, general facts,
-                    and routines.
-                </p>
+                    <h3>What Is Simple Present Tense?</h3>
+
+                    <p>
+                        Simple Present Tense is used to express daily activities,
+                        habits, general facts, and routines. It helps us talk about
+                        things that happen regularly or are generally true.
+                    </p>
+
+                </div>
 
                 <h3>Functions</h3>
 
-                <ul>
-                    <li>To describe daily routines.</li>
-                    <li>To express habits.</li>
-                    <li>To state general facts.</li>
-                    <li>To describe regular activities.</li>
-                </ul>
+                <div class="tense-functions">
+
+                    <div class="info-card">
+                        <h4>01. Daily Routines</h4>
+                        <p>To describe activities that we do every day.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>02. Habits</h4>
+                        <p>To express activities that we do regularly.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>03. General Facts</h4>
+                        <p>To state facts that are generally true.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>04. Regular Activities</h4>
+                        <p>To describe activities that happen repeatedly.</p>
+                    </div>
+
+                </div>
 
                 <h3>Sentence Patterns</h3>
 
-                <div class="info-card">
-                    <h4>Positive (+)</h4>
-                    <p>Subject + V1(s/es) + Object</p>
-                    <p>Example: She visits Bali every year.</p>
-                </div>
+                <div class="tense-patterns">
 
-                <div class="info-card">
-                    <h4>Negative (-)</h4>
-                    <p>Subject + do/does + not + V1</p>
-                    <p>Example: She does not visit Bali every year.</p>
-                </div>
+                    <div class="pattern-card positive">
+                        <span class="pattern-label">POSITIVE (+)</span>
+                        <h4>Positive Sentence</h4>
+                        <div class="formula">Subject + V1(s/es) + Object</div>
+                        <p>Example:</p>
+                        <p class="sentence-example">She visits Bali every year.</p>
+                    </div>
 
-                <div class="info-card">
-                    <h4>Interrogative (?)</h4>
-                    <p>Do/Does + Subject + V1 + Object?</p>
-                    <p>Example: Does she visit Bali every year?</p>
+                    <div class="pattern-card negative">
+                        <span class="pattern-label">NEGATIVE (-)</span>
+                        <h4>Negative Sentence</h4>
+                        <div class="formula">Subject + do/does + not + V1</div>
+                        <p>Example:</p>
+                        <p class="sentence-example">She does not visit Bali every year.</p>
+                    </div>
+
+                    <div class="pattern-card interrogative">
+                        <span class="pattern-label">INTERROGATIVE (?)</span>
+                        <h4>Interrogative Sentence</h4>
+                        <div class="formula">Do/Does + Subject + V1 + Object?</div>
+                        <p>Example:</p>
+                        <p class="sentence-example">Does she visit Bali every year?</p>
+                    </div>
+
                 </div>
 
                 <h3>Do and Does</h3>
 
-                <p>
-                    Use <strong>do</strong> with I, You, We, and They.
-                </p>
+                <div class="do-does-grid">
 
-                <p>
-                    Use <strong>does</strong> with He, She, and It.
-                </p>
+                    <div class="info-card do-card">
+                        <h4>DO</h4>
+                        <p>Used with:</p>
+                        <div class="subject-list">I &nbsp; You &nbsp; We &nbsp; They</div>
+                        <p>Example: Do they like travelling?</p>
+                    </div>
 
-                <p>
-                    Remember: In negative and interrogative sentences,
-                    use the base form of the verb (V1).
-                </p>
+                    <div class="info-card does-card">
+                        <h4>DOES</h4>
+                        <p>Used with:</p>
+                        <div class="subject-list">He &nbsp; She &nbsp; It</div>
+                        <p>Example: Does she like travelling?</p>
+                    </div>
+
+                </div>
+
+                <div class="tense-note">
+                    <h4>Remember!</h4>
+                    <p>
+                        In negative and interrogative sentences, always use
+                        the base form of the verb (V1). Do not add -s or -es
+                        after the verb when using do or does.
+                    </p>
+                </div>
 
                 <h3>Examples</h3>
 
-                <ul>
-                    <li>I travel with my family.</li>
-                    <li>She visits the beach every weekend.</li>
-                    <li>They do not travel by plane.</li>
-                    <li>Does he like travelling?</li>
-                </ul>
+                <div class="tense-examples">
+
+                    <div class="example-item">
+                        <span>01</span>
+                        <p>I travel with my family.</p>
+                    </div>
+
+                    <div class="example-item">
+                        <span>02</span>
+                        <p>She visits the beach every weekend.</p>
+                    </div>
+
+                    <div class="example-item">
+                        <span>03</span>
+                        <p>They do not travel by plane.</p>
+                    </div>
+
+                    <div class="example-item">
+                        <span>04</span>
+                        <p>Does he like travelling?</p>
+                    </div>
+
+                </div>
 
                 <button onclick="showPage('materials')">
                     Back to Materials
                 </button>
 
             </div>
-        </section>
 
+        </section>
 
         <!-- ================= MATERIAL 3 ================= -->
 
         <section id="material3" class="page">
-            <div class="section material-detail">
 
-                <p class="subtitle">MATERIAL 03</p>
+            <div class="section material-detail">
 
                 <h2>Time Expressions</h2>
 
-                <h3>What Are Time Expressions?</h3>
+                <div class="time-intro">
 
-                <p>
-                    Time expressions are words or phrases
-                    that tell us when an activity happens.
-                </p>
+                    <h3>What Are Time Expressions?</h3>
+
+                    <p>
+                        Time expressions are words or phrases that tell us
+                        when an activity happens. They help us understand
+                        the time, frequency, or period of an activity.
+                        In English, time expressions are often used with
+                        the Simple Present Tense to describe daily routines
+                        and habits.
+                    </p>
+
+                </div>
 
                 <h3>Common Time Expressions</h3>
 
-                <div class="info-card">
-                    <h4>Every Day</h4>
-                    <p>
-                        Example: I study English every day.
-                    </p>
-                </div>
+                <div class="time-expression-grid">
 
-                <div class="info-card">
-                    <h4>Every Weekend</h4>
-                    <p>
-                        Example: We visit our grandparents
-                        every weekend.
-                    </p>
-                </div>
+                    <div class="time-card">
+                        <div class="time-icon">📅</div>
+                        <h4>Every Day</h4>
+                        <p class="time-description">Used for activities that happen each day.</p>
+                        <div class="time-example">
+                            <span>Example</span>
+                            <p>I study English every day.</p>
+                        </div>
+                    </div>
 
-                <div class="info-card">
-                    <h4>Usually</h4>
-                    <p>
-                        Example: She usually travels by bus.
-                    </p>
-                </div>
+                    <div class="time-card">
+                        <div class="time-icon">🗓️</div>
+                        <h4>Every Weekend</h4>
+                        <p class="time-description">Used for activities that happen every weekend.</p>
+                        <div class="time-example">
+                            <span>Example</span>
+                            <p>We visit our grandparents every weekend.</p>
+                        </div>
+                    </div>
 
-                <div class="info-card">
-                    <h4>Sometimes</h4>
-                    <p>
-                        Example: They sometimes go to the beach.
-                    </p>
-                </div>
+                    <div class="time-card">
+                        <div class="time-icon">🔄</div>
+                        <h4>Usually</h4>
+                        <p class="time-description">Used for activities that happen most of the time.</p>
+                        <div class="time-example">
+                            <span>Example</span>
+                            <p>She usually travels by bus.</p>
+                        </div>
+                    </div>
 
-                <div class="info-card">
-                    <h4>Always</h4>
-                    <p>
-                        Example: He always brings a camera
-                        when travelling.
-                    </p>
+                    <div class="time-card">
+                        <div class="time-icon">⏳</div>
+                        <h4>Sometimes</h4>
+                        <p class="time-description">Used for activities that happen occasionally.</p>
+                        <div class="time-example">
+                            <span>Example</span>
+                            <p>They sometimes go to the beach.</p>
+                        </div>
+                    </div>
+
+                    <div class="time-card">
+                        <div class="time-icon">⭐</div>
+                        <h4>Always</h4>
+                        <p class="time-description">Used for activities that happen all the time.</p>
+                        <div class="time-example">
+                            <span>Example</span>
+                            <p>He always brings a camera when travelling.</p>
+                        </div>
+                    </div>
+
                 </div>
 
                 <h3>Other Examples</h3>
 
-                <ul>
-                    <li>In the morning</li>
-                    <li>At night</li>
-                    <li>On Monday</li>
-                    <li>Once a week</li>
-                    <li>Twice a month</li>
-                </ul>
+                <div class="other-time-examples">
+                    <div class="time-tag">In the morning</div>
+                    <div class="time-tag">At night</div>
+                    <div class="time-tag">On Monday</div>
+                    <div class="time-tag">Once a week</div>
+                    <div class="time-tag">Twice a month</div>
+                </div>
 
                 <button onclick="showPage('materials')">
                     Back to Materials
                 </button>
 
             </div>
-        </section>
 
+        </section>
 
         <!-- ================= MATERIAL 4 ================= -->
 
         <section id="material4" class="page">
-            <div class="section material-detail">
 
-                <p class="subtitle">MATERIAL 04</p>
+            <div class="section material-detail">
 
                 <h2>Common Mistakes</h2>
 
-                <p>
-                    Common mistakes are errors that often happen
-                    when students use English. Let's learn how
-                    to correct them!
-                </p>
+                <div class="mistakes-intro">
 
-                <div class="info-card">
-                    <h3>Mistake 1</h3>
-                    <p>Incorrect: She go to Bali every year.</p>
-                    <p>Correct: She goes to Bali every year.</p>
+                    <h3>Let's Learn from Mistakes!</h3>
+
                     <p>
-                        Explanation: Use -s or -es for verbs
-                        with He, She, and It in positive
-                        Simple Present sentences.
+                        Common mistakes are errors that often happen when
+                        students use English. Understanding these mistakes
+                        can help us improve our grammar and use English
+                        more correctly. Let's learn how to identify and
+                        correct them!
                     </p>
+
                 </div>
 
-                <div class="info-card">
-                    <h3>Mistake 2</h3>
-                    <p>Incorrect: They goes to the beach.</p>
-                    <p>Correct: They go to the beach.</p>
-                    <p>
-                        Explanation: Use the base form of the
-                        verb with They.
-                    </p>
-                </div>
+                <h3>Common Grammar Mistakes</h3>
 
-                <div class="info-card">
-                    <h3>Mistake 3</h3>
-                    <p>Incorrect: He don't like travelling.</p>
-                    <p>Correct: He doesn't like travelling.</p>
-                    <p>
-                        Explanation: Use doesn't with He,
-                        She, and It.
-                    </p>
-                </div>
+                <div class="mistakes-grid">
 
-                <div class="info-card">
-                    <h3>Mistake 4</h3>
-                    <p>Incorrect: Does she visits the museum?</p>
-                    <p>Correct: Does she visit the museum?</p>
-                    <p>
-                        Explanation: After does, use the
-                        base form of the verb.
-                    </p>
+                    <div class="mistake-card">
+
+                        <div class="mistake-heading">
+                            <span class="mistake-number">01</span>
+                            <h4>Mistake 1</h4>
+                        </div>
+
+                        <div class="incorrect-box">
+                            <span>✕ Incorrect</span>
+                            <p>She go to Bali every year.</p>
+                        </div>
+
+                        <div class="correct-box">
+                            <span>✓ Correct</span>
+                            <p>She goes to Bali every year.</p>
+                        </div>
+
+                        <div class="explanation-box">
+                            <h5>Why?</h5>
+                            <p>
+                                Use -s or -es for verbs with He, She, and It
+                                in positive Simple Present sentences.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="mistake-card">
+
+                        <div class="mistake-heading">
+                            <span class="mistake-number">02</span>
+                            <h4>Mistake 2</h4>
+                        </div>
+
+                        <div class="incorrect-box">
+                            <span>✕ Incorrect</span>
+                            <p>They goes to the beach.</p>
+                        </div>
+
+                        <div class="correct-box">
+                            <span>✓ Correct</span>
+                            <p>They go to the beach.</p>
+                        </div>
+
+                        <div class="explanation-box">
+                            <h5>Why?</h5>
+                            <p>
+                                Use the base form of the verb with They.
+                                Do not add -s or -es to the verb.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="mistake-card">
+
+                        <div class="mistake-heading">
+                            <span class="mistake-number">03</span>
+                            <h4>Mistake 3</h4>
+                        </div>
+
+                        <div class="incorrect-box">
+                            <span>✕ Incorrect</span>
+                            <p>He don't like travelling.</p>
+                        </div>
+
+                        <div class="correct-box">
+                            <span>✓ Correct</span>
+                            <p>He doesn't like travelling.</p>
+                        </div>
+
+                        <div class="explanation-box">
+                            <h5>Why?</h5>
+                            <p>
+                                Use doesn't with He, She, and It in
+                                negative Simple Present sentences.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="mistake-card">
+
+                        <div class="mistake-heading">
+                            <span class="mistake-number">04</span>
+                            <h4>Mistake 4</h4>
+                        </div>
+
+                        <div class="incorrect-box">
+                            <span>✕ Incorrect</span>
+                            <p>Does she visits the museum?</p>
+                        </div>
+
+                        <div class="correct-box">
+                            <span>✓ Correct</span>
+                            <p>Does she visit the museum?</p>
+                        </div>
+
+                        <div class="explanation-box">
+                            <h5>Why?</h5>
+                            <p>
+                                After does, use the base form of the verb (V1).
+                                Do not add -s or -es to the verb.
+                            </p>
+                        </div>
+
+                    </div>
+
                 </div>
 
                 <button onclick="showPage('materials')">
@@ -596,125 +828,521 @@
                 </button>
 
             </div>
+
         </section>
 
+        
+<!-- ================= QUIZ & GAMES ================= -->
 
-        <!-- ================= QUIZ & GAMES ================= -->
+<section id="games" class="page">
 
-        <section id="games" class="page">
-            <div class="section">
+    <div class="section">
 
-                <p class="subtitle">PRACTICE YOUR ENGLISH</p>
+        <p class="subtitle">TEST YOUR KNOWLEDGE</p>
 
-                <h2>Quiz & Games</h2>
+        <h2>Quiz & Games</h2>
+
+        <p>
+            Challenge yourself through interactive quizzes
+            and educational games!
+        </p>
+
+        <div class="card-container">
+
+            <!-- 1. TRAVEL VOCABULARY MATCH -->
+
+            <div class="game-card">
+
+                <div class="game-icon">🧳</div>
+
+                <h3>Travel Vocabulary Match</h3>
 
                 <p>
-                    Choose an activity and practice your
-                    English skills!
+                    Match English travelling vocabulary
+                    with their correct meanings.
+                </p>
+
+                <a href="https://www.educaplay.com/learning-resources/31601467-travel_vocabulary_match.html"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="game-button">
+                    Play Game
+                </a>
+
+            </div>
+
+
+            <!-- 2. WORD PUZZLE -->
+
+            <div class="game-card">
+
+                <div class="game-icon">🧩</div>
+
+                <h3>Word Puzzle – Travelling Vocabulary</h3>
+
+                <p>
+                    Solve the word puzzles by identifying
+                    travelling vocabulary from the clues.
+                </p>
+
+                <a href="LINK_WORD_PUZZLE"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="game-button">
+                    Play Game
+                </a>
+
+            </div>
+
+
+            <!-- 3. TRAVEL QUIZ ADVENTURE -->
+
+            <div class="game-card">
+
+                <div class="game-icon">🌍</div>
+
+                <h3>Travel Quiz Adventure</h3>
+
+                <p>
+                    Test your knowledge about travelling,
+                    transportation, places, and travel expressions.
+                </p>
+
+                <a href="LINK_TRAVEL_QUIZ"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="game-button">
+                    Play Game
+                </a>
+
+            </div>
+
+
+            <!-- 4. UNSCRAMBLE LETTERS -->
+
+            <div class="game-card">
+
+                <div class="game-icon">🔤</div>
+
+                <h3>Unscramble Letters – Travelling Vocabulary</h3>
+
+                <p>
+                    Rearrange mixed-up letters to create
+                    correct English travelling words.
+                </p>
+
+                <a href="LINK_UNSCRAMBLE_LETTERS"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="game-button">
+                    Play Game
+                </a>
+
+            </div>
+
+
+            <!-- 5. UNSCRAMBLE SENTENCES -->
+
+            <div class="game-card">
+
+                <div class="game-icon">📝</div>
+
+                <h3>Unscramble Sentences – Travelling Adventure</h3>
+
+                <p>
+                    Arrange scrambled words into
+                    meaningful and grammatically correct sentences.
+                </p>
+
+                <a href="LINK_UNSCRAMBLE_SENTENCES"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="game-button">
+                    Play Game
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+        <!-- ================= SKILLS PRACTICE ================= -->
+
+        <section id="skills" class="page">
+
+            <div class="section">
+
+                <p class="subtitle">IMPROVE YOUR ENGLISH</p>
+
+                <h2>Skills Practice</h2>
+
+                <p>
+                    Choose a skill and improve your English
+                    through interesting learning activities!
                 </p>
 
                 <div class="card-container">
 
-                    <!-- LISTENING -->
-
                     <div class="info-card">
-                        <h3>Listening Practice</h3>
-
+                        <h3>🎧 Listening Practice</h3>
                         <p>
-                            Watch the video carefully and
-                            identify important English
-                            words or expressions.
+                            Improve your listening skills through
+                            an audio about My Solo Travel as a Student.
                         </p>
-
-                        <div class="video-container">
-                            <iframe
-                                src="https://www.youtube.com/embed/-p-t46Ltg_A"
-                                title="Listening Practice"
-                                allowfullscreen>
-                            </iframe>
-                        </div>
-
-                        <p>
-                            <strong>Your Task:</strong>
-                            Identify five words or expressions
-                            that you hear in the video.
-                        </p>
+                        <button type="button" onclick="showPage('listeningQuiz')">
+                            Start Listening
+                        </button>
                     </div>
 
-
-                    <!-- SPEAKING -->
-
                     <div class="info-card">
-                        <h3>Speaking Practice</h3>
-
+                        <h3>🎤 Speaking Practice</h3>
                         <p>
-                            Practice speaking English through
+                            Practice speaking English using
                             simple expressions related to travelling.
                         </p>
-
-                        <div class="video-container">
-                            <iframe
-                                src="https://www.youtube.com/embed/G5yIwmjtavA"
-                                title="Speaking Practice"
-                                allowfullscreen>
-                            </iframe>
-                        </div>
-
-                        <button onclick="openSpeakingPractice()">
+                        <button type="button" onclick="showPage('speakingPractice')">
                             Start Speaking
                         </button>
                     </div>
 
-
-                    <!-- READING -->
-
                     <div class="info-card">
-                        <h3>Reading Practice</h3>
-
+                        <h3>📖 Reading Practice</h3>
                         <p>
                             Read a travelling story and answer
                             questions to test your understanding.
                         </p>
-
-                        <button onclick="openReadingPractice()">
+                        <button type="button" onclick="showPage('readingPractice')">
                             Start Reading
                         </button>
                     </div>
 
-
-                    <!-- WRITING -->
-
                     <div class="info-card">
-                        <h3>Writing Practice</h3>
-
+                        <h3>✍️ Writing Practice</h3>
                         <p>
                             Improve your writing skills through
                             an interactive English exercise.
                         </p>
-
-                        <a
-                            href="https://www.educaplay.com/learning-resources/31501578-english_exercise_descriptive_text_travelling.html"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            <button type="button">
-                                Start Writing
-                            </button>
-                        </a>
+                        <button type="button" onclick="showPage('writingPractice')">
+                            Start Writing
+                        </button>
                     </div>
 
                 </div>
 
-                <button onclick="showPage('materials')">
-                    Back to Materials
+            </div>
+
+        </section>
+
+        <!-- ================= LISTENING QUIZ PAGE ================= -->
+
+        <section id="listeningQuiz" class="page">
+
+            <div class="section">
+
+                <p class="subtitle">LISTENING SKILLS</p>
+
+                <h2>My Solo Travel as a Student</h2>
+
+                <p>
+                    Listen carefully to the audio and answer
+                    the questions to improve your listening skills.
+                </p>
+
+                <div id="listeningMaterial">
+
+                    <h3>Listening Material</h3>
+
+                    <p>
+                        Listen carefully to the audio about
+                        My Solo Travel as a Student.
+                    </p>
+
+                    <audio controls>
+                        <source
+                            src="vidssave.com [B1] My Solo Travel as a Student _ English Listening & Speaking Practice 128KBPS.mp3"
+                            type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+
+                    <div class="listening-exercise">
+
+                        <h3>Listening Comprehension Quiz</h3>
+
+                        <p>
+                            Listen to the audio carefully and choose
+                            the best answer for each question.
+                        </p>
+
+                        <form id="listeningForm">
+
+                            <div class="question-card">
+                                <p><strong>1. What is the main topic of the audio?</strong></p>
+                                <label><input type="radio" name="lq1" value="A"> A. Studying abroad</label>
+                                <label><input type="radio" name="lq1" value="B"> B. Travelling alone as a
+                                    student</label>
+                                <label><input type="radio" name="lq1" value="C"> C. School activities</label>
+                                <label><input type="radio" name="lq1" value="D"> D. Family holidays</label>
+                            </div>
+
+                            <div class="question-card">
+                                <p><strong>2. Why did the speaker decide to travel alone?</strong></p>
+                                <label><input type="radio" name="lq2" value="A"> A. To avoid going to school</label>
+                                <label><input type="radio" name="lq2" value="B"> B. To meet a famous person</label>
+                                <label><input type="radio" name="lq2" value="C"> C. To gain a new experience and become
+                                    independent</label>
+                                <label><input type="radio" name="lq2" value="D"> D. To attend a family
+                                    celebration</label>
+                            </div>
+
+                            <div class="question-card">
+                                <p><strong>3. Which preparation is the most important before travelling alone?</strong>
+                                </p>
+                                <label><input type="radio" name="lq3" value="A"> A. Bringing unnecessary items</label>
+                                <label><input type="radio" name="lq3" value="B"> B. Planning the trip and preparing
+                                    enough money</label>
+                                <label><input type="radio" name="lq3" value="C"> C. Buying expensive clothes</label>
+                                <label><input type="radio" name="lq3" value="D"> D. Avoiding all communication</label>
+                            </div>
+
+                            <div class="question-card">
+                                <p><strong>4. What can be inferred about the speaker's feelings before the
+                                        trip?</strong></p>
+                                <label><input type="radio" name="lq4" value="A"> A. The speaker felt completely
+                                    bored.</label>
+                                <label><input type="radio" name="lq4" value="B"> B. The speaker was excited but also
+                                    nervous.</label>
+                                <label><input type="radio" name="lq4" value="C"> C. The speaker did not care about the
+                                    trip.</label>
+                                <label><input type="radio" name="lq4" value="D"> D. The speaker was angry with
+                                    everyone.</label>
+                            </div>
+
+                            <div class="question-card">
+                                <p><strong>5. What is the best lesson from the speaker's experience?</strong></p>
+                                <label><input type="radio" name="lq5" value="A"> A. Travelling alone is always
+                                    easy.</label>
+                                <label><input type="radio" name="lq5" value="B"> B. Students should never
+                                    travel.</label>
+                                <label><input type="radio" name="lq5" value="C"> C. Travelling alone can develop
+                                    independence and responsibility.</label>
+                                <label><input type="radio" name="lq5" value="D"> D. Travelling is only about spending
+                                    money.</label>
+                            </div>
+
+                            <div class="question-card">
+                                <p><strong>6. If the speaker had not planned the trip carefully, what would most likely
+                                        have happened?</strong></p>
+                                <label><input type="radio" name="lq6" value="A"> A. The trip would automatically become
+                                    cheaper.</label>
+                                <label><input type="radio" name="lq6" value="B"> B. The speaker might have faced
+                                    difficulties managing time, money, or transportation.</label>
+                                <label><input type="radio" name="lq6" value="C"> C. The speaker would certainly meet
+                                    more friends.</label>
+                                <label><input type="radio" name="lq6" value="D"> D. Nothing could possibly go
+                                    wrong.</label>
+                            </div>
+
+                            <div class="question-card">
+                                <p><strong>7. Which statement best represents the speaker's attitude toward solo
+                                        travelling?</strong></p>
+                                <label><input type="radio" name="lq7" value="A"> A. It is completely safe and has no
+                                    risks.</label>
+                                <label><input type="radio" name="lq7" value="B"> B. It should be avoided because it is
+                                    always dangerous.</label>
+                                <label><input type="radio" name="lq7" value="C"> C. It can be rewarding, but it requires
+                                    preparation and responsibility.</label>
+                                <label><input type="radio" name="lq7" value="D"> D. It is only suitable for people with
+                                    a lot of money.</label>
+                            </div>
+
+                            <div class="question-card">
+                                <p><strong>8. Which conclusion is most reasonable based on the speaker's
+                                        experience?</strong></p>
+                                <label><input type="radio" name="lq8" value="A"> A. Independence means never asking
+                                    anyone for help.</label>
+                                <label><input type="radio" name="lq8" value="B"> B. A successful solo trip depends only
+                                    on choosing a beautiful destination.</label>
+                                <label><input type="radio" name="lq8" value="C"> C. Personal growth can come from facing
+                                    challenges while making responsible decisions.</label>
+                                <label><input type="radio" name="lq8" value="D"> D. Travelling alone guarantees that
+                                    every problem will be solved.</label>
+                            </div>
+
+                            <div class="question-card">
+                                <p><strong>9. Which statement would be the weakest conclusion to draw from the speaker's
+                                        story?</strong></p>
+                                <label><input type="radio" name="lq9" value="A"> A. Preparation can help reduce problems
+                                    during a trip.</label>
+                                <label><input type="radio" name="lq9" value="B"> B. Solo travelling may teach students
+                                    to be more responsible.</label>
+                                <label><input type="radio" name="lq9" value="C"> C. One positive travelling experience
+                                    proves that solo travelling is suitable for every student.</label>
+                                <label><input type="radio" name="lq9" value="D"> D. Travelling can provide learning
+                                    experiences outside the classroom.</label>
+                            </div>
+
+                            <div class="question-card">
+                                <p><strong>10. Suppose another student wants to copy the speaker's trip exactly. Which
+                                        advice is the most critical?</strong></p>
+                                <label><input type="radio" name="lq10" value="A"> A. Follow every decision made by the
+                                    speaker without considering personal circumstances.</label>
+                                <label><input type="radio" name="lq10" value="B"> B. Choose the same destination because
+                                    one person's experience guarantees the same result.</label>
+                                <label><input type="radio" name="lq10" value="C"> C. Consider personal budget, safety,
+                                    age, travel rules, and individual needs before making a similar plan.</label>
+                                <label><input type="radio" name="lq10" value="D"> D. Ignore possible risks because
+                                    travelling is mainly about having fun.</label>
+                            </div>
+
+                            <div class="reading-buttons">
+                                <button type="button" onclick="checkListeningQuiz()">
+                                    Submit Answers
+                                </button>
+
+                                <button type="button" onclick="retryListeningQuiz()">
+                                    Try Again
+                                </button>
+                            </div>
+
+                        </form>
+
+                        <div id="listeningResult"></div>
+
+                    </div>
+
+                </div>
+
+                <button onclick="showPage('skills')">
+                    Back to Skills Practice
                 </button>
 
             </div>
+
         </section>
 
+<!-- ================= SPEAKING PRACTICE ================= -->
+
+<section id="speakingPractice" class="page">
+
+    <div class="section">
+
+        <p class="subtitle">SPEAKING CHALLENGE</p>
+
+        <h2>Speaking Practice</h2>
+
+        <p>
+            Practice your English speaking skills
+            using simple expressions related to travelling.
+        </p>
+
+        <div id="speakingMaterial">
+
+            <!-- WATCH AND LEARN -->
+
+            <h3>Watch and Learn</h3>
+
+            <div class="video-container">
+                <video controls>
+                    <source
+                        src="vidssave.com 30-Days Slow English — Day 12_ At the Hotel & Check-In 🏨 360P.mp4"
+                        type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+            </div>
+
+            <!-- USEFUL EXPRESSIONS -->
+
+            <h3>Useful Expressions for Travelling</h3>
+
+            <div class="info-card">
+                <h4>Asking for Information</h4>
+                <p>Where is the nearest beach?</p>
+                <p>How can I get to the hotel?</p>
+            </div>
+
+            <div class="info-card">
+                <h4>Giving Information</h4>
+                <p>The beach is near the city center.</p>
+                <p>You can go there by bus.</p>
+            </div>
+
+            <div class="info-card">
+                <h4>Sharing Experiences</h4>
+                <p>I visited Bali last holiday.</p>
+                <p>The scenery was beautiful.</p>
+            </div>
+
+            <button onclick="showSpeakingTab('speakingExercise')">
+                Start Speaking Exercise
+            </button>
+
+        </div>
+
+        <!-- SPEAKING EXERCISE -->
+
+        <div id="speakingExercise" style="display: none;">
+
+            <h3>Speak and Practice!</h3>
+
+            <p>
+                Read the sentence displayed on the screen.
+                Then click the microphone button and
+                pronounce the sentence.
+            </p>
+
+            <div class="info-card">
+
+                <p id="speakingNumber">Sentence 1 of 5</p>
+
+                <h3 id="speakingPrompt">
+                    Bali is a beautiful place to visit.
+                </h3>
+
+                <button type="button" onclick="hearExample()">
+                    Hear Example
+                </button>
+
+                <button type="button" id="startSpeaking" onclick="startSpeaking()">
+                    Start Speaking
+                </button>
+
+                <p id="speakingStatus">
+                    Click Start Speaking to begin.
+                </p>
+
+                <div id="recognizedSpeech"></div>
+
+                <div id="speakingFeedback"></div>
+
+                <button type="button" id="nextSpeaking" onclick="nextSpeaking()" disabled>
+                    Next Sentence
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- NAVIGATION BUTTONS -->
+
+        <button onclick="showSpeakingTab('speakingMaterial')">
+            Back to Speaking Material
+        </button>
+
+        <button onclick="showPage('skills')">
+            Back to Skills Practice
+        </button>
+
+    </div>
+
+</section>
 
         <!-- ================= READING PRACTICE ================= -->
 
         <section id="readingPractice" class="page">
+
             <div class="section">
 
                 <p class="subtitle">READING CHALLENGE</p>
@@ -761,374 +1389,114 @@
 
                 </div>
 
-
                 <form id="readingForm">
-
-                    <!-- EASY QUESTIONS -->
-
-                    <h3>Level 1: Easy</h3>
-
                     <div class="question">
-                        <p>
-                            <strong>1.</strong>
-                            Where did the writer spend the holiday?
-                        </p>
-
-                        <label>
-                            <input type="radio" name="r1" value="A">
-                            A. Bali
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r1" value="B">
-                            B. Jakarta
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r1" value="C">
-                            C. Bandung
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r1" value="D">
-                            D. Surabaya
-                        </label>
+                        <p><strong>1.</strong> Where did the writer spend the holiday?</p>
+                        <label><input type="radio" name="r1" value="A"> A. Bali</label>
+                        <label><input type="radio" name="r1" value="B"> B. Jakarta</label>
+                        <label><input type="radio" name="r1" value="C"> C. Bandung</label>
+                        <label><input type="radio" name="r1" value="D"> D. Surabaya</label>
                     </div>
 
-
                     <div class="question">
-                        <p>
-                            <strong>2.</strong>
-                            Which place did the writer visit
-                            on the first day?
-                        </p>
-
-                        <label>
-                            <input type="radio" name="r2" value="A">
-                            A. Tanah Lot Temple
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r2" value="B">
-                            B. Ubud Palace
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r2" value="C">
-                            C. Kuta Beach
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r2" value="D">
-                            D. Mount Batur
-                        </label>
+                        <p><strong>2.</strong> Which place did the writer visit on the first day?</p>
+                        <label><input type="radio" name="r2" value="A"> A. Tanah Lot Temple</label>
+                        <label><input type="radio" name="r2" value="B"> B. Ubud Palace</label>
+                        <label><input type="radio" name="r2" value="C"> C. Kuta Beach</label>
+                        <label><input type="radio" name="r2" value="D"> D. Mount Batur</label>
                     </div>
 
-
                     <div class="question">
-                        <p>
-                            <strong>3.</strong>
-                            What is Tanah Lot Temple famous for?
-                        </p>
-
-                        <label>
-                            <input type="radio" name="r3" value="A">
-                            A. Its location on a large rock
-                            near the sea
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r3" value="B">
-                            B. Its modern buildings
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r3" value="C">
-                            C. Its shopping center
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r3" value="D">
-                            D. Its amusement park
-                        </label>
+                        <p><strong>3.</strong> What is Tanah Lot Temple famous for?</p>
+                        <label><input type="radio" name="r3" value="A"> A. Its location on a large rock near the
+                            sea</label>
+                        <label><input type="radio" name="r3" value="B"> B. Its modern buildings</label>
+                        <label><input type="radio" name="r3" value="C"> C. Its shopping center</label>
+                        <label><input type="radio" name="r3" value="D"> D. Its amusement park</label>
                     </div>
 
-
                     <div class="question">
-                        <p>
-                            <strong>4.</strong>
-                            How did the writer describe
-                            the Balinese people?
-                        </p>
-
-                        <label>
-                            <input type="radio" name="r4" value="A">
-                            A. Unfriendly
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r4" value="B">
-                            B. Strict
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r4" value="C">
-                            C. Friendly
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r4" value="D">
-                            D. Careless
-                        </label>
+                        <p><strong>4.</strong> How did the writer describe the Balinese people?</p>
+                        <label><input type="radio" name="r4" value="A"> A. Unfriendly</label>
+                        <label><input type="radio" name="r4" value="B"> B. Strict</label>
+                        <label><input type="radio" name="r4" value="C"> C. Friendly</label>
+                        <label><input type="radio" name="r4" value="D"> D. Careless</label>
                     </div>
 
-
-                    <!-- INTERMEDIATE QUESTIONS -->
-
-                    <h3>Level 2: Intermediate</h3>
-
                     <div class="question">
-                        <p>
-                            <strong>5.</strong>
-                            Why do many tourists visit Kuta Beach?
-                        </p>
-
-                        <label>
-                            <input type="radio" name="r5" value="A">
-                            A. Because it has many factories
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r5" value="B">
-                            B. Because it has beautiful scenery
-                            and golden sand
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r5" value="C">
-                            C. Because it is a shopping center
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r5" value="D">
-                            D. Because it is a quiet mountain
-                        </label>
+                        <p><strong>5.</strong> Why do many tourists visit Kuta Beach?</p>
+                        <label><input type="radio" name="r5" value="A"> A. Because it has many factories</label>
+                        <label><input type="radio" name="r5" value="B"> B. Because it has beautiful scenery and golden
+                            sand</label>
+                        <label><input type="radio" name="r5" value="C"> C. Because it is a shopping center</label>
+                        <label><input type="radio" name="r5" value="D"> D. Because it is a quiet mountain</label>
                     </div>
 
-
                     <div class="question">
-                        <p>
-                            <strong>6.</strong>
-                            What did the writer do during
-                            the trip besides visiting tourist places?
+                        <p><strong>6.</strong> What did the writer do during the trip besides visiting tourist places?
                         </p>
-
-                        <label>
-                            <input type="radio" name="r6" value="A">
-                            A. Studied at school
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r6" value="B">
-                            B. Tried traditional Balinese food
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r6" value="C">
-                            C. Worked in a restaurant
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r6" value="D">
-                            D. Bought a new house
-                        </label>
+                        <label><input type="radio" name="r6" value="A"> A. Studied at school</label>
+                        <label><input type="radio" name="r6" value="B"> B. Tried traditional Balinese food</label>
+                        <label><input type="radio" name="r6" value="C"> C. Worked in a restaurant</label>
+                        <label><input type="radio" name="r6" value="D"> D. Bought a new house</label>
                     </div>
 
-
                     <div class="question">
-                        <p>
-                            <strong>7.</strong>
-                            What does the word "unforgettable"
-                            in the last paragraph mean?
-                        </p>
-
-                        <label>
-                            <input type="radio" name="r7" value="A">
-                            A. Easy to forget
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r7" value="B">
-                            B. Difficult to forget
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r7" value="C">
-                            C. Not interesting
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r7" value="D">
-                            D. Very disappointing
-                        </label>
+                        <p><strong>7.</strong> What does the word "unforgettable" in the last paragraph mean?</p>
+                        <label><input type="radio" name="r7" value="A"> A. Easy to forget</label>
+                        <label><input type="radio" name="r7" value="B"> B. Difficult to forget</label>
+                        <label><input type="radio" name="r7" value="C"> C. Not interesting</label>
+                        <label><input type="radio" name="r7" value="D"> D. Very disappointing</label>
                     </div>
 
-
                     <div class="question">
-                        <p>
-                            <strong>8.</strong>
-                            What is the main idea of the
-                            third paragraph?
-                        </p>
-
-                        <label>
-                            <input type="radio" name="r8" value="A">
-                            A. The writer's favourite food
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r8" value="B">
-                            B. The writer's school activities
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r8" value="C">
-                            C. The visit to Tanah Lot Temple
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r8" value="D">
-                            D. The writer's daily routine
-                        </label>
+                        <p><strong>8.</strong> What is the main idea of the third paragraph?</p>
+                        <label><input type="radio" name="r8" value="A"> A. The writer's favourite food</label>
+                        <label><input type="radio" name="r8" value="B"> B. The writer's school activities</label>
+                        <label><input type="radio" name="r8" value="C"> C. The visit to Tanah Lot Temple</label>
+                        <label><input type="radio" name="r8" value="D"> D. The writer's daily routine</label>
                     </div>
 
-
-                    <!-- HOTS QUESTIONS -->
-
-                    <h3>Level 3: HOTS Challenge</h3>
-
                     <div class="question">
-                        <p>
-                            <strong>9.</strong>
-                            Based on the text, what can students
-                            learn from the writer's travelling experience?
-                        </p>
-
-                        <label>
-                            <input type="radio" name="r9" value="A">
-                            A. Travelling is only about taking pictures
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r9" value="B">
-                            B. Travelling can help people understand
-                            different cultures
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r9" value="C">
-                            C. Travelling is always expensive
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r9" value="D">
-                            D. Travelling is only for adults
-                        </label>
+                        <p><strong>9.</strong> Based on the text, what can students learn from the writer's travelling
+                            experience?</p>
+                        <label><input type="radio" name="r9" value="A"> A. Travelling is only about taking
+                            pictures</label>
+                        <label><input type="radio" name="r9" value="B"> B. Travelling can help people understand
+                            different cultures</label>
+                        <label><input type="radio" name="r9" value="C"> C. Travelling is always expensive</label>
+                        <label><input type="radio" name="r9" value="D"> D. Travelling is only for adults</label>
                     </div>
 
-
                     <div class="question">
-                        <p>
-                            <strong>10.</strong>
-                            If you wanted to learn about
-                            Balinese culture, which activity
-                            would be most suitable based on the text?
-                        </p>
-
-                        <label>
-                            <input type="radio" name="r10" value="A">
-                            A. Staying in the hotel all day
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r10" value="B">
-                            B. Visiting Tanah Lot Temple and
-                            trying traditional food
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r10" value="C">
-                            C. Watching television in the room
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r10" value="D">
-                            D. Avoiding local people
-                        </label>
+                        <p><strong>10.</strong> If you wanted to learn about Balinese culture, which activity would be
+                            most suitable based on the text?</p>
+                        <label><input type="radio" name="r10" value="A"> A. Staying in the hotel all day</label>
+                        <label><input type="radio" name="r10" value="B"> B. Visiting Tanah Lot Temple and trying
+                            traditional food</label>
+                        <label><input type="radio" name="r10" value="C"> C. Watching television in the room</label>
+                        <label><input type="radio" name="r10" value="D"> D. Avoiding local people</label>
                     </div>
 
-
                     <div class="question">
-                        <p>
-                            <strong>11.</strong>
-                            Which statement best represents
-                            the writer's opinion about travelling?
+                        <p><strong>11.</strong> Which statement best represents the writer's opinion about travelling?
                         </p>
-
-                        <label>
-                            <input type="radio" name="r11" value="A">
-                            A. Travelling is a waste of time
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r11" value="B">
-                            B. Travelling provides experiences
-                            and cultural knowledge
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r11" value="C">
-                            C. Travelling is only for entertainment
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r11" value="D">
-                            D. Travelling is not important
-                        </label>
+                        <label><input type="radio" name="r11" value="A"> A. Travelling is a waste of time</label>
+                        <label><input type="radio" name="r11" value="B"> B. Travelling provides experiences and cultural
+                            knowledge</label>
+                        <label><input type="radio" name="r11" value="C"> C. Travelling is only for entertainment</label>
+                        <label><input type="radio" name="r11" value="D"> D. Travelling is not important</label>
                     </div>
 
-
                     <div class="question">
-                        <p>
-                            <strong>12.</strong>
-                            Imagine you have limited time
-                            to visit Bali. Based on the text,
-                            which choice would give you both
-                            natural and cultural experiences?
-                        </p>
-
-                        <label>
-                            <input type="radio" name="r12" value="A">
-                            A. Visiting only a shopping mall
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r12" value="B">
-                            B. Staying at the hotel
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r12" value="C">
-                            C. Visiting Kuta Beach and
-                            Tanah Lot Temple
-                        </label>
-
-                        <label>
-                            <input type="radio" name="r12" value="D">
-                            D. Visiting only a restaurant
-                        </label>
+                        <p><strong>12.</strong> Imagine you have limited time to visit Bali. Based on the text, which
+                            choice would give you both natural and cultural experiences?</p>
+                        <label><input type="radio" name="r12" value="A"> A. Visiting only a shopping mall</label>
+                        <label><input type="radio" name="r12" value="B"> B. Staying at the hotel</label>
+                        <label><input type="radio" name="r12" value="C"> C. Visiting Kuta Beach and Tanah Lot
+                            Temple</label>
+                        <label><input type="radio" name="r12" value="D"> D. Visiting only a restaurant</label>
                     </div>
-
 
                     <div class="reading-buttons">
 
@@ -1136,9 +1504,7 @@
                             Submit Answers
                         </button>
 
-                        <button
-                            type="button"
-                            onclick="retryReading()">
+                        <button type="button" onclick="retryReading()">
                             Try Again
                         </button>
 
@@ -1148,143 +1514,274 @@
 
                 <div id="readingResult"></div>
 
-                <button onclick="showPage('games')">
-                    Back to Quiz & Games
+                <button onclick="showPage('skills')">
+                    Back to Skills Practice
                 </button>
 
             </div>
+
         </section>
 
+        <!-- ================= WRITING PRACTICE ================= -->
 
-        <!-- ================= SPEAKING PRACTICE ================= -->
+        <section id="writingPractice" class="page">
 
-        <section id="speakingPractice" class="page">
             <div class="section">
 
-                <p class="subtitle">SPEAKING CHALLENGE</p>
+                <p class="subtitle">WRITING CHALLENGE</p>
 
-                <h2>Speaking Practice</h2>
+                <h2>Writing Practice</h2>
 
                 <p>
-                    Practice your English speaking skills
-                    using simple expressions related to travelling.
+                    Improve your English writing skills through
+                    an interactive exercise about travelling.
                 </p>
 
+                <div class="info-card">
 
-                <!-- SPEAKING MATERIAL TAB -->
-
-                <div id="speakingMaterial">
-
-                    <h3>Useful Expressions for Travelling</h3>
-
-                    <div class="info-card">
-                        <h4>Asking for Information</h4>
-                        <p>Where is the nearest beach?</p>
-                        <p>How can I get to the hotel?</p>
-                    </div>
-
-                    <div class="info-card">
-                        <h4>Giving Information</h4>
-                        <p>The beach is near the city center.</p>
-                        <p>You can go there by bus.</p>
-                    </div>
-
-                    <div class="info-card">
-                        <h4>Sharing Experiences</h4>
-                        <p>I visited Bali last holiday.</p>
-                        <p>The scenery was beautiful.</p>
-                    </div>
-
-                    <h3>Watch and Learn</h3>
-
-                    <div class="video-container">
-                        <iframe
-                            src="https://www.youtube.com/embed/G5yIwmjtavA"
-                            title="Speaking Learning Video"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-
-                    <button
-                        onclick="showSpeakingTab('speakingExercise')">
-                        Start Speaking Exercise
-                    </button>
-
-                </div>
-
-
-                <!-- SPEAKING EXERCISE TAB -->
-
-                <div id="speakingExercise" style="display: none;">
-
-                    <h3>Speak and Practice!</h3>
+                    <h3>Descriptive Text: Travelling</h3>
 
                     <p>
-                        Read the sentence displayed on the screen.
-                        Then click the microphone button and
-                        pronounce the sentence.
+                        Practice writing descriptive sentences
+                        about your favourite tourist destination.
                     </p>
 
-                    <div class="info-card">
-
-                        <p id="speakingNumber">
-                            Sentence 1 of 5
-                        </p>
-
-                        <h3 id="speakingPrompt">
-                            Bali is a beautiful place to visit.
-                        </h3>
-
-                        <button
-                            type="button"
-                            onclick="hearExample()">
-                            Hear Example
-                        </button>
-
-                        <button
-                            type="button"
-                            id="startSpeaking"
-                            onclick="startSpeaking()">
-                            Start Speaking
-                        </button>
-
-                        <p id="speakingStatus">
-                            Click Start Speaking to begin.
-                        </p>
-
-                        <div id="recognizedSpeech"></div>
-
-                        <div id="speakingFeedback"></div>
-
-                        <button
-                            type="button"
-                            id="nextSpeaking"
-                            onclick="nextSpeaking()"
-                            disabled>
-                            Next Sentence
-                        </button>
-
-                    </div>
+                    <a href="https://www.educaplay.com/learning-resources/31501578-english_exercise_descriptive_text_travelling.html"
+                        target="_blank" rel="noopener noreferrer">
+                        Start Writing Exercise
+                    </a>
 
                 </div>
 
-
-                <button
-                    onclick="showSpeakingTab('speakingMaterial')">
-                    Back to Speaking Material
-                </button>
-
-                <button onclick="showPage('games')">
-                    Back to Quiz & Games
+                <button onclick="showPage('skills')">
+                    Back to Skills Practice
                 </button>
 
             </div>
+
         </section>
 
+
+<!-- ================= FINAL CHALLENGE ================= -->
+
+<section id="finalChallenge" class="page">
+
+    <div class="section">
+
+        <p class="subtitle">TEST YOUR ENGLISH SKILLS</p>
+
+        <h2>Final Challenge</h2>
+
+        <p>
+            Are you ready to test your English knowledge?
+            Complete the final challenge and show what you have learned!
+        </p>
+
+        <div class="final-challenge-card">
+
+            <div class="final-challenge-icon">🏆</div>
+
+            <h3>Final Challenge: Travelling Adventure</h3>
+
+            <p>
+                Take the ultimate English challenge through
+                multiple-choice, true or false, and fill-in-the-blank
+                questions. Test your knowledge of travelling vocabulary,
+                Simple Present Tense, Time Expressions, and Discussion Text.
+            </p>
+
+            <p>
+                Challenge yourself from easy to super hard questions
+                and get the best score!
+            </p>
+
+            <a href="https://wayground.com/join?gc=812497"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="game-button">
+                Start Final Challenge
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= REFLECTION ================= -->
+
+<section id="reflection" class="page">
+
+    <div class="section">
+
+        <p class="subtitle">LOOK BACK, THINK, AND GROW!</p>
+
+        <h2>My Learning Reflection</h2>
+
+        <p>
+            Take a moment to reflect on your learning journey.
+            Think about what you have learned, your experiences,
+            and what you want to improve!
+        </p>
+
+
+        <!-- STUDENT INFORMATION -->
+
+        <div class="reflection-card">
+
+            <h3>👤 Student Information</h3>
+
+            <div class="reflection-form-group">
+
+                <label for="studentName">Your Name</label>
+
+                <input
+                    type="text"
+                    id="studentName"
+                    placeholder="Enter your full name"
+                >
+
+            </div>
+
+            <div class="reflection-form-group">
+
+                <label for="studentClass">Your Class</label>
+
+                <input
+                    type="text"
+                    id="studentClass"
+                    placeholder="Enter your class"
+                >
+
+            </div>
+
+        </div>
+
+
+        <!-- WHAT DID I LEARN? -->
+
+        <div class="reflection-card">
+
+            <h3>📚 1. What Did I Learn?</h3>
+
+            <p>
+                What new English knowledge or skills did you learn
+                from this learning activity?
+            </p>
+
+            <textarea
+                id="learningAnswer"
+                placeholder="I learned about..."
+                rows="4"
+            ></textarea>
+
+        </div>
+
+
+        <!-- LEARNING EXPERIENCE -->
+
+        <div class="reflection-card">
+
+            <h3>🤔 2. My Learning Experience</h3>
+
+            <p>
+                Which material or activity was the most challenging
+                for you? Why?
+            </p>
+
+            <textarea
+                id="experienceAnswer"
+                placeholder="The most challenging part was..."
+                rows="4"
+            ></textarea>
+
+        </div>
+
+
+        <!-- SELF ASSESSMENT -->
+
+        <div class="reflection-card">
+
+            <h3>💜 3. How Do I Feel About My Learning?</h3>
+
+            <p>
+                How confident are you in understanding the materials?
+            </p>
+
+            <div class="reflection-options">
+
+                <label>
+                    <input
+                        type="radio"
+                        name="learningLevel"
+                        value="Confident"
+                    >
+                    😊 Confident
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="learningLevel"
+                        value="Getting Better"
+                    >
+                    🙂 Getting Better
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="learningLevel"
+                        value="Need More Practice"
+                    >
+                    🤔 Need More Practice
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <!-- MY NEXT STEP -->
+
+        <div class="reflection-card">
+
+            <h3>🚀 4. My Next Step</h3>
+
+            <p>
+                What English skills or topics do you want to improve
+                in the future?
+            </p>
+
+            <textarea
+                id="nextStepAnswer"
+                placeholder="I want to improve..."
+                rows="4"
+            ></textarea>
+
+        </div>
+
+
+        <!-- SUBMIT BUTTON -->
+
+        <div class="reflection-submit">
+
+            <button type="button" onclick="submitReflection()">
+                Complete My Reflection
+            </button>
+
+            <p id="reflectionMessage"></p>
+
+        </div>
+
+    </div>
+
+</section>
 
         <!-- ================= CONTACT / DEVELOPER ================= -->
 
         <section id="contact" class="page">
+
             <div class="section contact-section">
 
                 <p class="subtitle">GET TO KNOW THE CREATOR</p>
@@ -1299,13 +1796,9 @@
                 <div class="developer-card">
 
                     <div class="developer-profile">
-
                         <h3>Nur Haliza</h3>
-
                         <p>English Education Student</p>
-
                     </div>
-
 
                     <div class="developer-information">
 
@@ -1313,30 +1806,14 @@
 
                         <div class="information-list">
 
-                            <p>
-                                <strong>Name:</strong>
-                                Nur Haliza
-                            </p>
-
-                            <p>
-                                <strong>Study Program:</strong>
-                                English Education
-                            </p>
-
-                            <p>
-                                <strong>Semester:</strong>
-                                5
-                            </p>
-
-                            <p>
-                                <strong>Institution:</strong>
-                                STKIP Muhammadiyah Pagar Alam
-                            </p>
+                            <p><strong>Name:</strong> Nur Haliza</p>
+                            <p><strong>Study Program:</strong> English Education</p>
+                            <p><strong>Semester:</strong> 5</p>
+                            <p><strong>Institution:</strong> STKIP Muhammadiyah Pagar Alam</p>
 
                         </div>
 
                     </div>
-
 
                     <div class="developer-information">
 
@@ -1344,25 +1821,10 @@
 
                         <div class="information-list">
 
-                            <p>
-                                <strong>Media Title:</strong>
-                                English Unlocked
-                            </p>
-
-                            <p>
-                                <strong>Theme:</strong>
-                                Travelling Adventure
-                            </p>
-
-                            <p>
-                                <strong>Subject:</strong>
-                                English
-                            </p>
-
-                            <p>
-                                <strong>Target Learners:</strong>
-                                Junior High School (SMP)
-                            </p>
+                            <p><strong>Media Title:</strong> English Unlocked</p>
+                            <p><strong>Theme:</strong> Travelling Adventure</p>
+                            <p><strong>Subject:</strong> English</p>
+                            <p><strong>Target Learners:</strong> Junior High School (SMP)</p>
 
                             <p>
                                 <strong>Materials:</strong>
@@ -1379,7 +1841,6 @@
 
                     </div>
 
-
                     <p class="developer-message">
                         "Explore the World, Learn English!"
                     </p>
@@ -1387,34 +1848,35 @@
                 </div>
 
             </div>
+
         </section>
 
     </main>
-
 
     <!-- ================= FOOTER ================= -->
 
     <footer class="footer">
 
-        <h3>ENGLISH UNLOCKED</h3>
+        <img src="Winking Explorer with Globe.png" alt="English Unlocked Mascot" class="footer-mascot">
 
-        <p>Travelling Adventure</p>
+        <h2>ENGLISH UNLOCKED</h2>
 
-        <p>
+        <p class="footer-subtitle">Travelling Adventure</p>
+
+        <p class="footer-tagline">
             Explore the World, Learn English!
         </p>
 
-        <p>
-            &copy; 2026 English Unlocked.
-            All Rights Reserved.
-        </p>
+        <div class="footer-bottom">
+            © 2026 English Unlocked. All Rights Reserved.
+        </div>
 
     </footer>
-
 
     <!-- ================= JAVASCRIPT ================= -->
 
     <script src="script.js"></script>
 
 </body>
+
 </html>
